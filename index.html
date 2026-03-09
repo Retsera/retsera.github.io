@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Chí Phong | Backend Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Phong<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                    <i class="fa-solid fa-sun light-icon"></i>
+                </button>
+                <div class="menu-btn" id="menu-btn">
+                    <div class="menu-btn-burger"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Nguyễn Chí Phong.</h1>
+            <h2 class="role">I build reliable backend systems.</h2>
+            <p class="summary">
+                I'm a Backend Developer based in Ho Chi Minh City, specializing in designing scalable REST APIs and reliable database-driven applications.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://github.com/Retsera" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="window-body">
+<pre><code><span class="keyword">class</span> <span class="class-name">Developer</span> {
+    <span class="keyword">constructor</span>() {
+        <span class="keyword">this</span>.name = <span class="string">'Nguyễn Chí Phong'</span>;
+        <span class="keyword">this</span>.role = <span class="string">'Backend Developer'</span>;
+        <span class="keyword">this</span>.focus = [<span class="string">'Java'</span>, <span class="string">'C#'</span>, <span class="string">'APIs'</span>];
+    }
+    
+    <span class="method">code</span>() {
+        <span class="keyword">return</span> <span class="string">"Building robust systems..."</span>;
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="section-container">
+            <h2 class="section-title"><span>01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! My name is Phong and I enjoy creating backend systems that live on the internet. My interest in software engineering started early and I've spent the last 4 years studying at Sai Gon University, honing my skills.
+                    </p>
+                    <p>
+                        My main focus is on building robust and scalable backend architecture, creating efficient REST APIs, and working heavily with relational databases to ensure data integrity and performance.
+                    </p>
+                    <p>
+                        I enjoy solving complex architectural problems and building real-world software systems using Java and C#.
+                    </p>
+                    <div class="contact-quick">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Ho Chi Minh City, Vietnam</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>chiphongnguyen2610@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-overlay"></div>
+                        <!-- Placeholder for personal photo -->
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nguyễn Chí Phong" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="section-container">
+            <h2 class="section-title"><span>02.</span> Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li><i class="fa-brands fa-microsoft"></i> C#</li>
+                        <li><i class="fa-solid fa-c"></i> C</li>
+                        <li><i class="fa-brands fa-cuttlefish"></i> C++</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-leaf"></i> Hibernate</li>
+                        <li><i class="fa-solid fa-database"></i> Entity Framework Core</li>
+                        <li><i class="fa-solid fa-network-wired"></i> REST API Development</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-elephant"></i> PostgreSQL</li>
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+                        <li><i class="fa-brands fa-linux"></i> Linux</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="section-container">
+            <h2 class="section-title"><span>03.</span> Some Things I've Built</h2>
+            
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title"><a href="https://github.com/Nguyen-Minh-Truc/TourManagement" target="_blank" rel="noopener noreferrer">Tour Booking Website</a></h3>
+                        <div class="project-description">
+                            <p>
+                                A comprehensive full-stack web application for booking tours. Handled the backend architecture incorporating JWT authentication, AWS integration for cloud image storage, and Google logging. Implemented automated email notification systems.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Java</li>
+                            <li>REST APIs</li>
+                            <li>JWT</li>
+                            <li>AWS</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Nguyen-Minh-Truc/TourManagement" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="External Link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="https://github.com/Nguyen-Minh-Truc/TourManagement" target="_blank" rel="noopener noreferrer">
+                            <div class="img-placeholder"><i class="fa-solid fa-plane-departure"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured reverse">
+                    <div class="project-content">
+                        <p class="project-overline">Backend Architecture</p>
+                        <h3 class="project-title"><a href="https://github.com/Retsera/Library" target="_blank" rel="noopener noreferrer">Library Management App</a></h3>
+                        <div class="project-description">
+                            <p>
+                                A backend-focused library management system built with Java. It handles complex operations such as book inventory management, member borrowing rules, and comprehensive user operations. Focuses strongly on data normalization and efficient queries.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Java</li>
+                            <li>Hibernate</li>
+                            <li>SQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Retsera/Library" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="https://github.com/Retsera/Library" target="_blank" rel="noopener noreferrer">
+                            <div class="img-placeholder"><i class="fa-solid fa-book-open"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <p class="project-overline">Desktop Application</p>
+                        <h3 class="project-title"><a href="https://github.com/huyhuy1712/C_hash" target="_blank" rel="noopener noreferrer">Cafe Management System</a></h3>
+                        <div class="project-description">
+                            <p>
+                                A robust desktop application designed for cafe management. Built with C# and integrated heavily with REST APIs to manage orders, payment processing, and real-time inventory tracking.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>C#</li>
+                            <li>Entity Framework Cor</li>
+                            <li>REST APIs</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/huyhuy1712/C_hash" target="_blank" rel="noopener noreferrer" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <a href="https://github.com/huyhuy1712/C_hash" target="_blank" rel="noopener noreferrer">
+                            <div class="img-placeholder"><i class="fa-solid fa-mug-hot"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="section-container">
+            <h2 class="section-title"><span>04.</span> Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Information Technology – Software Engineering</h3>
+                            <span class="timeline-date">Present (4th Year)</span>
+                        </div>
+                        <h4 class="timeline-institution">Sai Gon University (SGU)</h4>
+                        <p class="timeline-detail">
+                            Focusing on advanced software engineering principles, robust backend system architecture, and modern database management. Expected to graduate with a strong foundation in building scalable enterprise solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="section-container text-center">
+            <h2 class="section-title centered"><span>05.</span> What's Next?</h2>
+            <h3 class="contact-title">Get In Touch</h3>
+            <p class="contact-text">
+                I'm currently looking for new opportunities as a Backend Developer. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            
+            <div class="contact-methods">
+                <a href="mailto:chiphongnguyen2610@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>Email</h4>
+                    <span>chiphongnguyen2610@gmail.com</span>
+                </a>
+                <a href="tel:0333758146" class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Phone</h4>
+                    <span>0333758146</span>
+                </a>
+            </div>
+
+            <div class="action-buttons mt-4">
+                <a href="mailto:chiphongnguyen2610@gmail.com" class="btn btn-primary">Say Hello</a>
+                <a href="#" class="btn btn-outline" download="Nguyen_Chi_Phong_Resume.pdf">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/Retsera" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <!-- LinkedIn placeholder as usually requested -->
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="footer-text">
+            Designed & Built by Nguyễn Chí Phong<br>
+            <span class="copyright">&copy; 2024 All rights reserved.</span>
+        </p>
+    </footer>
+
+    <!-- Custom Cursor (Optional premium touch) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
